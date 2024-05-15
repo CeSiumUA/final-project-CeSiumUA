@@ -1,0 +1,5 @@
+*.o
+build/
+.vscode/
+*.log
+base_external/rootfs_overlay/etc/wpa_supplicant.conf
