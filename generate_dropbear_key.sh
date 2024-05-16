@@ -1,0 +1,1 @@
+dropbearkey -t ed25519 -f base_external/rootfs_overlay/etc/dropbear/dropbear_ed25519_host_key

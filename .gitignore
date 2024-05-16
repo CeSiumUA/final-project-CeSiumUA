@@ -2,4 +2,7 @@
 build/
 .vscode/
 *.log
+
+# Sensitive files which should be stored only locally
 base_external/rootfs_overlay/etc/wpa_supplicant.conf
+base_external/rootfs_overlay/etc/dropbear/dropbear_ed25519_host_key
