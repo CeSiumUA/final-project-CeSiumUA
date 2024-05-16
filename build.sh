@@ -20,6 +20,12 @@ then
     ./generate_wpa_conf.sh
 fi
 
+if [ ! -e $EXTERNAL_REL_BUILDROOT_FOLDER_NAME/rootfs_overlay/etc/dropbear/dropbear_ed25519_host_key ]
+then
+    echo "MISSING DROPBEAR KEY FILE"
+    ./generate_dropbear_key.sh
+fi
+
 if [ ! -e buildroot/.config ]
 then
 	echo "MISSING BUILDROOT CONFIGURATION FILE"
