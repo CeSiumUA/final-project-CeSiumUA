@@ -1,4 +1,0 @@
-config BR2_PACKAGE_CESIUM_TEST_PKG
-	bool "cesium_test_pkg"
-	help
-	  Build and install a test package

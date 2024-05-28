@@ -1,0 +1,4 @@
+config BR2_PACKAGE_CESIUM_TEST_PKG
+	bool "cesium-test-pkg"
+	help
+	  Build and install aesd char driver
