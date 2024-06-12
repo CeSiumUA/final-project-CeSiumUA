@@ -5,7 +5,7 @@
 #
 ##############################################################
 
-CESIUM_TEST_PKG_VERSION = 'b439cd5bc6bb4cd7057ca4040c4694266c8ae3c7'
+CESIUM_TEST_PKG_VERSION = 'c93e0c6a0aa072cacb64c65813918bcf646477c5'
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
