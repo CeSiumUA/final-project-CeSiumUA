@@ -1,2 +1,0 @@
-fdtfile=sun8i-h2-plus-orangepi-zero.dtb
-overlays=testoverlay.dtbo
