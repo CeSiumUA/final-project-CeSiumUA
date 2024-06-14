@@ -18,8 +18,6 @@ define TEST_OVERLAY_PKG_INSTALL_CMDS
 mkdir -p $(TARGET_DIR)/boot/overlays
 dtc -@ -I dts -O dtb -o $(@D)/testoverlay.dtbo $(@D)/testoverlay.dts
 cp -f $(@D)/testoverlay.dtbo $(TARGET_DIR)/boot/overlays
-awk -v insert="  FDTOVERLAYS /boot/overlays/testoverlay.dtbo" '/devicetreedir \/boot/ { print; print insert; next }1' $(TARGET_DIR)/boot/extlinux/extlinux.conf > /tmp/extlinux.conf
-mv /tmp/extlinux.conf $(TARGET_DIR)/boot/extlinux/extlinux.conf
 
 endef
 
