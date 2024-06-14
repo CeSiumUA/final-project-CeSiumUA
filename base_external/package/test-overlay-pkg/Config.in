@@ -1,0 +1,4 @@
+config BR2_PACKAGE_TEST_OVERLAY_PKG
+	bool "test-overlay-pkg"
+	help
+	  Build and install testoverlay device tree overlay
