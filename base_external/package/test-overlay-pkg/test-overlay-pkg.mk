@@ -5,7 +5,7 @@
 #
 ##############################################################
 
-TEST_OVERLAY_PKG_VERSION = 'da0a17fc18f6457b55e1a06e6aaf9c3e417e2291'
+TEST_OVERLAY_PKG_VERSION = '71b83a29acdefbdea94a8d505f43f0ed43d1e801'
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
