@@ -13,13 +13,18 @@ TEST_OVERLAY_PKG_SITE = 'git@github.com:CeSiumUA/lkm-test.git'
 TEST_OVERLAY_PKG_SITE_METHOD = git
 TEST_OVERLAY_PKG_GIT_SUBMODULES = YES
 
-define TEST_OVERLAY_BUILD_CMDS
-	$(MAKE) $(TARGET_CONFIGURE_OPTS) -C $(@D) dts
+define TEST_OVERLAY_PKG_BUILD_CMDS
+	echo "Building testoverlay.dtbo"
+	$(MAKE) $(TARGET_CONFIGURE_OPTS) -C $(@D) dt
+	echo "Building testoverlay.dtbo done"
 endef
 
-define TEST_OVERLAY_PKG_INSTALL_CMDS
+define TEST_OVERLAY_PKG_INSTALL_TARGET_CMDS
+	echo "Installing testoverlay.dtbo"
 	mkdir -p $(TARGET_DIR)/boot/overlays
 	cp -f $(@D)/testoverlay.dtbo $(TARGET_DIR)/boot/overlays
+	file $(TARGET_DIR)/boot/overlays/testoverlay.dtbo
+	echo "Installing testoverlay.dtbo done"
 endef
 
 $(eval $(generic-package))
