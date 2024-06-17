@@ -1,2 +1,1 @@
-source "$BR2_EXTERNAL_project_base_PATH/package/cesium-test-pkg/Config.in"
-source "$BR2_EXTERNAL_project_base_PATH/package/test-overlay-pkg/Config.in"
+source "$BR2_EXTERNAL_project_base_PATH/package/nrf24/Config.in"

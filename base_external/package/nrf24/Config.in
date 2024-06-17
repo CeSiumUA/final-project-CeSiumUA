@@ -1,0 +1,4 @@
+config BR2_PACKAGE_NRF24
+	bool "nrf24"
+	help
+	  Build and install nrf24 driver
