@@ -2,9 +2,9 @@
 # Script intended to run from pipeline to build a project
 # Author: CeSiumUA
 
-export BR2_DL_RIR=$HOME/.buildroot_dl_cache
+export BR2_DL_DIR=$HOME/.buildroot_dl_cache
 
-mkdir -p ${BR2_DL_RIR}
+mkdir -p ${BR2_DL_DIR}
 
 rm -rf buildroot/.config
 
