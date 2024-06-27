@@ -1,0 +1,23 @@
+name: image-build
+on:
+    push:
+        branches:
+            - main
+    pull_request:
+        branches:
+            - main
+
+jobs:
+    build:
+        runs-on: self-hosted
+        timeout-minutes: 480
+        steps:
+            - uses: actions/checkout@v2
+            - name: Checkout submodules
+              run: git submodule update --init --recursive
+            - name: Build Linux image
+              env:
+                BR_PROJECT_WIFI_SSID: ${{ secrets.BR_PROJECT_WIFI_SSID }}
+                BR_PROJECT_WIFI_PASSWORD: ${{ secrets.BR_PROJECT_WIFI_PASSWORD }}
+              run: |
+                ./clean-build.sh
