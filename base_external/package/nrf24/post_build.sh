@@ -4,7 +4,7 @@
 EXTLINUX_CONF="$TARGET_DIR/boot/extlinux/extlinux.conf"
 
 # Line to append
-OVERLAY_LINE="  FDTOVERLAYS /boot/overlays/testoverlay.dtbo"
+OVERLAY_LINE="  FDTOVERLAYS /boot/overlays/nrf24_overlay.dtbo"
 
 # Check if the line already exists to prevent duplication
 grep -q "$OVERLAY_LINE" "$EXTLINUX_CONF"
