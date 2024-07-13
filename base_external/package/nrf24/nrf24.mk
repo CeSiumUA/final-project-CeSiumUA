@@ -5,7 +5,8 @@
 #
 ##############################################################
 
-NRF24_VERSION = 'final-testing'
+NRF24_VERSION = 'b8617d7b315797dca567f235e00a69a3d8477997'
+# NRF24_VERSION = 'eafaa4a3bbca886081399102012e7a6cfe741251'
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
