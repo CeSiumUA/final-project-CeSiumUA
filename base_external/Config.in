@@ -1,1 +1,2 @@
 source "$BR2_EXTERNAL_project_base_PATH/package/nrf24/Config.in"
+source "$BR2_EXTERNAL_project_base_PATH/package/retransmitter/Config.in"
