@@ -5,7 +5,7 @@
 #
 ##############################################################
 
-NRF24_VERSION = '678eee66651d34c869da0bbadd2c566f81fb5e6b'
+NRF24_VERSION = 'b1a58c612dc71c12c29545947bf30ef263cffcf4'
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
