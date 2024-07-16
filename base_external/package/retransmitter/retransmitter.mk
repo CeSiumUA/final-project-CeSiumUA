@@ -5,7 +5,7 @@
 #
 ##############################################################
 
-RETRANSMITTER_VERSION = '9a3843c4dd8925e1e0fe5e6ba3ffa2ceafc0ebc2'
+RETRANSMITTER_VERSION = 'b1fc90cf438695dac9142a131a598f6a4aa510c0'
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
