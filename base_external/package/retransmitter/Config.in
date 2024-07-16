@@ -1,0 +1,4 @@
+config BR2_PACKAGE_RETRANSMITTER
+	bool "retransmitter"
+	help
+	  A retransmitter user-space app
